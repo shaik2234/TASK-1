@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+.main-header {
+  background-color: #0a192f;
+  color: white;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navbar a {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: #64ffda;
+}
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  padding: 4rem 5%;
+  background: #eaf4ff;
+  gap: 2rem;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  color: #0a192f;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #64ffda;
+  color: #0a192f;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #02c2ac;
+}
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 4rem 5%;
+  background: white;
+}
+.feature-box {
+  flex: 1 1 250px;
+  background: #f1f1f1;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.feature-box i {
+  margin-bottom: 1rem;
+  color: #0a192f;
+}
+footer {
+  background: #0a192f;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.socials {
+  display: flex;
+  gap: 1.5rem;
+}
+.socials a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.3s;
+}
+.socials a:hover {
+  color: #64ffda;
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
